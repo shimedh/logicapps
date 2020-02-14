@@ -18,7 +18,7 @@ jobs:
     - name: Set up Python version
       uses: actions/setup-python@v1
       with:
-        python-version: '3.7'
+        python-version: '3.6'
 
     - name: Install Python dependencies
       run: |
@@ -32,5 +32,5 @@ jobs:
       uses: azure/webapps-deploy@v1
       with:
         app-name: 'test-python-app-github'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_c29c6fb9450046f2956714a951f3315f }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_289475e99751472da8d83986a12ac20c }}
         package: './myapp.zip'
